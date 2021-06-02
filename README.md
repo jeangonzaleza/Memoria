@@ -1,6 +1,14 @@
 # Degree Project
 ### REQUIRES python 2.7 (I'm using python 2.7.18)
 
+#### You need to create 3 empy folders:
+
+* res
+* all_data
+* logs
+
+#### Put the clean_es.json file on the root folder of this project
+
 For training use THEANO_FLAGS=mode=FAST_RUN,device=cuda1,floatX=float32 PYTHONPATH=. python model/train.py -t -i ./clean_es.json -m "new_model" -E 3
 
 Note: "-E 3" means 3 epochs, modify this paremeter if necessary
